@@ -1,1 +1,21 @@
-# 100-days-of-swift-ui
+# 100 days of SwiftUI
+
+- [x] [Project 1. WeSplit](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project1%2Fwe-split)
+- [ ] Project 2. Guess the Flag
+- [ ] Project 3. Views and modifiers
+- [ ] Project 4. BetterRest
+- [ ] Project 5. Word Scramble
+- [ ] Project 6. Animation
+- [ ] Project 7. iExpense
+- [ ] Project 8. Moonshot
+- [ ] Project 9. Drawing
+- [ ] Project 10. Cupcake Corner
+- [ ] Project 11. Bookworm
+- [ ] Project 12. Core Data
+- [ ] Project 13. Instafilter
+- [ ] Project 14. Bucket List
+- [ ] Project 15. Accessibility
+- [ ] Project 16. Hot Prospects
+- [ ] Project 17. Flashzilla
+- [ ] Project 18. Layout and geometry
+- [ ] Project 19. SnowSeeker
