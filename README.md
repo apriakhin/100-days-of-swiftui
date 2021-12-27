@@ -1,7 +1,7 @@
 # 100 days of SwiftUI
 
 - [x] [Project 1. WeSplit](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project1%2Fwe-split)
-- [ ] Project 2. Guess the Flag
+- [x] [Project 2. Guess the Flag](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project2%2Fguess-the-flag)
 - [ ] Project 3. Views and modifiers
 - [ ] Project 4. BetterRest
 - [ ] Project 5. Word Scramble
