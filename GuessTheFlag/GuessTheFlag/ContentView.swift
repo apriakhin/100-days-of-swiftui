@@ -15,6 +15,9 @@ struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
+    @State private var showingFinal = false
+    @State private var roundCount = 8
+    
     var body: some View {
         ZStack {
             RadialGradient(stops: [
@@ -72,6 +75,11 @@ struct ContentView: View {
         } message: {
             Text("Your score is \(scoreCount)")
         }
+        .alert(scoreTitle, isPresented: $showingFinal) {
+            Button("Start over", action: reset)
+        } message: {
+            Text("Game over! Your score is \(scoreCount)")
+        }
     }
     
     func flagTapped(_ number: Int) {
@@ -83,12 +91,24 @@ struct ContentView: View {
             scoreCount -= scoreCount < 1 ? 0 : 1
         }
         
-        showingScore = true
+        roundCount -= 1
+        
+        if roundCount == 0 {
+            showingFinal = true
+        } else {
+            showingScore = true
+        }
     }
     
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+    }
+    
+    func reset() {
+        scoreCount = 0
+        roundCount = 8
+        askQuestion()
     }
 }
 
