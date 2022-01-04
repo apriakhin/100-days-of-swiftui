@@ -41,7 +41,11 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
+                    Picker("Coffee count", selection: $coffeeAmount) {
+                        ForEach(1..<21) {
+                            Text($0 == 1 ? "1 cup" : "\($0) cups")
+                        }
+                    }
                 } header: {
                     Text("Daily coffee intake")
                 }
@@ -67,7 +71,7 @@ struct ContentView: View {
             let hour = (components.hour ?? 0) * 60 * 60
             let minute = (components.minute ?? 0) * 60
             
-            let predication = try model.prediction(wake: Double(hour + minute), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount ))
+            let predication = try model.prediction(wake: Double(hour + minute), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount + 1))
             
             let sleepTime = wakeUp - predication.actualSleep
             alertTitle = "Your ideal bedtime is…"
