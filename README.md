@@ -3,7 +3,7 @@
 - [x] [Project 1. WeSplit](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project1%2Fwe-split)
 - [x] [Project 2. Guess the Flag](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project2%2Fguess-the-flag)
 - [x] [Project 3. Views and modifiers](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project3%2Fviews-and-modifiers)
-- [ ] Project 4. BetterRest
+- [x] [Project 4. BetterRest](https://github.com/apriakhin/100-days-of-swift-ui/tree/project/project4%2Fbetter-rest)
 - [ ] Project 5. Word Scramble
 - [ ] Project 6. Animation
 - [ ] Project 7. iExpense
