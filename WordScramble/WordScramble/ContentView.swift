@@ -16,6 +16,13 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var scoreWords = 0
+    @State private var scoreLetters = 0
+    
+    var score: Int {
+        scoreWords * scoreLetters
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -42,7 +49,13 @@ struct ContentView: View {
                 Text(errorMessage)
             }
             .toolbar {
-                Button("New game", action: startGame)
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Score: \(score)")
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("New game", action: startGame)
+                }
             }
         }
     }
@@ -81,6 +94,9 @@ struct ContentView: View {
         }
         
         newWord = ""
+        
+        scoreWords += 1
+        scoreLetters += answer.count
     }
     
     func startGame() {
