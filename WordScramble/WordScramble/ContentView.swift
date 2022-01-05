@@ -63,6 +63,16 @@ struct ContentView: View {
             return
         }
         
+        if isShort(word: answer) {
+            wordError(title: "Word is very short", message: "Need more letters!")
+            return
+        }
+        
+        if isStart(word: answer) {
+            wordError(title: "Word is start word", message: "Don't repeat start word!")
+            return
+        }
+        
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
@@ -97,7 +107,7 @@ struct ContentView: View {
             }
         }
         
-        return false
+        return true
     }
     
     func isReal(word: String) -> Bool {
@@ -106,6 +116,14 @@ struct ContentView: View {
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         
         return misspelledRange.location == NSNotFound
+    }
+    
+    func isShort(word: String) -> Bool {
+        word.count < 3
+    }
+    
+    func isStart(word: String) -> Bool {
+        rootWord == word
     }
     
     func wordError(title: String, message: String) {
