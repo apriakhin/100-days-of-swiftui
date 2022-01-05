@@ -1,4 +1,4 @@
-# 100 days of SwiftUI
+# 100 Days of SwiftUI
 
 - [x] [Project 1. WeSplit](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project1%2Fwe-split)
 - [x] [Project 2. Guess the Flag](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project2%2Fguess-the-flag)
