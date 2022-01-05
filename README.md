@@ -4,7 +4,7 @@
 - [x] [Project 2. Guess the Flag](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project2%2Fguess-the-flag)
 - [x] [Project 3. Views and modifiers](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project3%2Fviews-and-modifiers)
 - [x] [Project 4. BetterRest](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project4%2Fbetter-rest)
-- [ ] Project 5. Word Scramble
+- [x] [Project 5. Word Scramble](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project5%2Fword-scramble)
 - [ ] Project 6. Animation
 - [ ] Project 7. iExpense
 - [ ] Project 8. Moonshot
