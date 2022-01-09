@@ -64,6 +64,7 @@ struct ContentView: View {
                         }
                         .rotation3DEffect(.degrees(number == tappedFlag ? 360 : 0), axis: (x: 0, y: 1, z: 0))
                         .opacity(tappedFlag != nil && number != tappedFlag ? 0.25 : 1)
+                        .rotation3DEffect(.degrees(tappedFlag != nil && number != tappedFlag ? -360 : 0), axis: (x: 0, y: 1, z: 0))
                     }
                 }
                 .frame(maxWidth: .infinity)
