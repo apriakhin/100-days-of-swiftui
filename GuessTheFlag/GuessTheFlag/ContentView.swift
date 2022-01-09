@@ -62,7 +62,8 @@ struct ContentView: View {
                         } label: {
                             FlagImage(name: countries[number])
                         }
-                        .rotation3DEffect(.degrees(getRoundAmount(by: number)), axis: (x: 0, y: 1, z: 0))
+                        .rotation3DEffect(.degrees(number == tappedFlag ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(tappedFlag != nil && number != tappedFlag ? 0.25 : 1)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -125,16 +126,6 @@ struct ContentView: View {
         scoreCount = 0
         roundCount = 8
         askQuestion()
-    }
-    
-    func getRoundAmount(by number: Int) -> Double {
-        if tappedFlag == nil {
-            return 0
-        }
-        if number == tappedFlag {
-            return 360
-        }
-        return 0
     }
 }
 
