@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddView: View {
     @ObservedObject var expenses: Expenses
+    @Environment(\.dismiss) var dismis
     
     @State private var name = ""
     @State private var type = "Personal"
@@ -32,9 +33,10 @@ struct AddView: View {
             }
             .navigationTitle("Add new expense")
             .toolbar {
-                Button("Sav e") {
+                Button("Save") {
                     let expense = ExpenseItem(name: name, type: type, amount: amount)
                     expenses.items.append(expense)
+                    dismis()
                 }
             }
         }
