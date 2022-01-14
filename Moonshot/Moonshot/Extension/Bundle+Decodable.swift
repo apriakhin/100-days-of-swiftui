@@ -1,5 +1,5 @@
 //
-//  Bundle-Decodable.swift
+//  Bundle+Decodable.swift
 //  Moonshot
 //
 //  Created by Anton Priakhin on 14.01.2022.
