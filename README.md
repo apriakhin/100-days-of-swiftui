@@ -7,7 +7,7 @@
 - [x] [Project 5. Word Scramble](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project5%2Fword-scramble)
 - [x] [Project 6. Animation](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project6%2Fanimation)
 - [x] [Project 7. iExpense](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project7%2Fi-expense)
-- [ ] Project 8. Moonshot
+- [x] [Project 8. Moonshot](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project8%2Fmoonshot)
 - [ ] Project 9. Drawing
 - [ ] Project 10. Cupcake Corner
 - [ ] Project 11. Bookworm
