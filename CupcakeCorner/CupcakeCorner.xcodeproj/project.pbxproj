@@ -11,6 +11,8 @@
 		39A8121E27D78C2900CCF52C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8121D27D78C2900CCF52C /* ContentView.swift */; };
 		39A8122027D78C2A00CCF52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A8121F27D78C2A00CCF52C /* Assets.xcassets */; };
 		39A8122327D78C2A00CCF52C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A8122227D78C2A00CCF52C /* Preview Assets.xcassets */; };
+		39A8122A27D7B3C000CCF52C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8122927D7B3C000CCF52C /* Order.swift */; };
+		39A8122C27D7B66900CCF52C /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8122B27D7B66900CCF52C /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		39A8121D27D78C2900CCF52C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39A8121F27D78C2A00CCF52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A8122227D78C2A00CCF52C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39A8122927D7B3C000CCF52C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		39A8122B27D7B66900CCF52C /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				39A8121B27D78C2900CCF52C /* CupcakeCornerApp.swift */,
 				39A8121D27D78C2900CCF52C /* ContentView.swift */,
+				39A8122B27D7B66900CCF52C /* AddressView.swift */,
+				39A8122927D7B3C000CCF52C /* Order.swift */,
 				39A8121F27D78C2A00CCF52C /* Assets.xcassets */,
 				39A8122127D78C2A00CCF52C /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A8122A27D7B3C000CCF52C /* Order.swift in Sources */,
+				39A8122C27D7B66900CCF52C /* AddressView.swift in Sources */,
 				39A8121E27D78C2900CCF52C /* ContentView.swift in Sources */,
 				39A8121C27D78C2900CCF52C /* CupcakeCornerApp.swift in Sources */,
 			);
