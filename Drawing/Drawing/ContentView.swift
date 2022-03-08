@@ -7,38 +7,75 @@
 
 import SwiftUI
 
-struct Arrow: Shape {
-    var lineWidth: Double
-    
-    var animatableData: Double {
-         get { lineWidth }
-         set { lineWidth = newValue }
-    }
-    
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-
-        path.move(to: CGPoint(x: rect.minX, y: rect.midY))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
-        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
-        
-        return path.strokedPath(.init(lineWidth: lineWidth))
-    }
-}
-
-struct ContentView: View {
-    @State private var lineWidth = 2.0
+struct ColorCyclingRectangle: View {
+    var amount = 0.0
+    var steps = 100
+    var startPointGradient: UnitPoint = .top
+    var endPointGradient: UnitPoint = .bottom
     
     var body: some View {
-        Arrow(lineWidth: lineWidth)
-            .frame(width: 100, height: 100)
-            .onTapGesture {
-                withAnimation {
-                    lineWidth += 2.0
-                }
+        ZStack {
+            ForEach(0..<steps) { value in
+                Rectangle()
+                    .inset(by: Double(value))
+                    .strokeBorder(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                color(for: value, brightness: 1),
+                                color(for: value, brightness: 0.5)
+                            ]),
+                            startPoint: startPointGradient,
+                            endPoint: endPointGradient
+                        ),
+                        lineWidth: 2
+                    )
             }
+        }
+        .drawingGroup()
+    }
+
+    func color(for value: Int, brightness: Double) -> Color {
+        var targetHue = Double(value) / Double(steps) + amount
+
+        if targetHue > 1 {
+            targetHue -= 1
+        }
+
+        return Color(hue: targetHue, saturation: 1, brightness: brightness)
+     }
+ }
+
+struct ContentView: View {
+    @State private var colorCycle = 0.0
+    @State private var startPointGradient: UnitPoint = .top
+    @State private var endPointGradient: UnitPoint = .bottom
+    
+    var body: some View {
+        VStack {
+            ColorCyclingRectangle(
+                amount: colorCycle,
+                startPointGradient: startPointGradient,
+                endPointGradient: endPointGradient
+            )
+            .frame(width: 300, height: 300)
+
+            Group {
+                Text("Color Cycle")
+                Slider(value: $colorCycle)
+                
+                Text("Start Point Gradient X")
+                Slider(value: $startPointGradient.x)
+                
+                Text("Start Point Gradient Y")
+                Slider(value: $startPointGradient.y)
+                
+                Text("End Point Gradient X")
+                Slider(value: $endPointGradient.x)
+                
+                Text("End Point Gradient Y")
+                Slider(value: $endPointGradient.y)
+            }
+        }
     }
 }
 
