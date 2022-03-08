@@ -8,7 +8,7 @@
 - [x] [Project 6. Animation](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project6%2Fanimation)
 - [x] [Project 7. iExpense](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project7%2Fi-expense)
 - [x] [Project 8. Moonshot](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project8%2Fmoonshot)
-- [ ] Project 9. Drawing
+- [x] [Project 9. Drawing](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project9/drawing)
 - [ ] Project 10. Cupcake Corner
 - [ ] Project 11. Bookworm
 - [ ] Project 12. Core Data
