@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39952C7927E7C8AB000933CB /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39952C7827E7C8AB000933CB /* CheckoutView.swift */; };
+		39952C7B27E7D6EC000933CB /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39952C7A27E7D6EC000933CB /* OrderModel.swift */; };
 		39A8121C27D78C2900CCF52C /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8121B27D78C2900CCF52C /* CupcakeCornerApp.swift */; };
 		39A8121E27D78C2900CCF52C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8121D27D78C2900CCF52C /* ContentView.swift */; };
 		39A8122027D78C2A00CCF52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A8121F27D78C2A00CCF52C /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		39952C7827E7C8AB000933CB /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		39952C7A27E7D6EC000933CB /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		39A8121827D78C2900CCF52C /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A8121B27D78C2900CCF52C /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		39A8121D27D78C2900CCF52C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				39A8122B27D7B66900CCF52C /* AddressView.swift */,
 				39952C7827E7C8AB000933CB /* CheckoutView.swift */,
 				39A8122927D7B3C000CCF52C /* Order.swift */,
+				39952C7A27E7D6EC000933CB /* OrderModel.swift */,
 				39A8121F27D78C2A00CCF52C /* Assets.xcassets */,
 				39A8122127D78C2A00CCF52C /* Preview Content */,
 			);
@@ -150,6 +153,7 @@
 				39A8122C27D7B66900CCF52C /* AddressView.swift in Sources */,
 				39952C7927E7C8AB000933CB /* CheckoutView.swift in Sources */,
 				39A8121E27D78C2900CCF52C /* ContentView.swift in Sources */,
+				39952C7B27E7D6EC000933CB /* OrderModel.swift in Sources */,
 				39A8121C27D78C2900CCF52C /* CupcakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
