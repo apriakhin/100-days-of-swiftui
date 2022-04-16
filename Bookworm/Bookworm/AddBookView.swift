@@ -43,21 +43,33 @@ struct AddBookView: View {
 
                 Section {
                     Button("Save") {
-                        let newBook = Book(context: moc)
-                        newBook.id = UUID()
-                        newBook.title = title
-                        newBook.author = author
-                        newBook.rating = Int16(rating)
-                        newBook.genre = genre
-                        newBook.review = review
-
-                        try? moc.save()
+                        saveBook()
                         dismiss()
                     }
+                    .disabled(!isValidForm)
                 }
             }
             .navigationTitle("Add Book")
         }
+    }
+    
+    var isValidForm: Bool {
+        !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+        !author.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+        !genre.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+        !review.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+    
+    func saveBook() {
+        let newBook = Book(context: moc)
+        newBook.id = UUID()
+        newBook.title = title
+        newBook.author = author
+        newBook.rating = Int16(rating)
+        newBook.genre = genre
+        newBook.review = review
+
+        try? moc.save()
     }
 }
 
