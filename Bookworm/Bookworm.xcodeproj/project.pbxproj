@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39DAEB4A280B6CB500DA53B1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DAEB49280B6CB500DA53B1 /* RatingView.swift */; };
 		39E2144E2806103F008A310B /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2144D2806103F008A310B /* BookwormApp.swift */; };
 		39E214502806103F008A310B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2144F2806103F008A310B /* ContentView.swift */; };
 		39E2145228061040008A310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E2145128061040008A310B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39DAEB49280B6CB500DA53B1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		39E2144A2806103F008A310B /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E2144D2806103F008A310B /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		39E2144F2806103F008A310B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				39E2145E280615C0008A310B /* DataController.swift */,
 				39E2145128061040008A310B /* Assets.xcassets */,
 				39E2145328061040008A310B /* Preview Content */,
+				39DAEB49280B6CB500DA53B1 /* RatingView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				39E214502806103F008A310B /* ContentView.swift in Sources */,
 				39E2145F280615C0008A310B /* DataController.swift in Sources */,
 				39E2145D28061523008A310B /* Bookworm.xcdatamodeld in Sources */,
+				39DAEB4A280B6CB500DA53B1 /* RatingView.swift in Sources */,
 				39E2144E2806103F008A310B /* BookwormApp.swift in Sources */,
 				39E2146128061E70008A310B /* AddBookView.swift in Sources */,
 			);
