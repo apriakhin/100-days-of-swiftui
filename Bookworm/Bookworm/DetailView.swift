@@ -33,6 +33,13 @@ struct DetailView: View {
                     .offset(x: -5, y: -5)
             }
             
+            if let date  = book.date {
+                Text(date.formatted(.dateTime))
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding()
+            }
+            
             Text(book.author ?? "Unknown author")
                 .font(.title)
                 .foregroundColor(.secondary)
@@ -78,6 +85,7 @@ struct DetailView_Previews: PreviewProvider {
         book.genre = "Fantasy"
         book.rating = 4
         book.review = "This was a great book; I really enjoyed it."
+        book.date = Date.now
 
         return NavigationView {
             DetailView(book: book)
