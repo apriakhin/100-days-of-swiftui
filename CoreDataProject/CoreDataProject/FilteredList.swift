@@ -19,9 +19,15 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
     
     let content: (T) -> Content
     
-    init(filterKey: String, filterComparison: Comparison, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+    init(
+        sortDescriptors: [SortDescriptor<T>] = [],
+        filterKey: String,
+        filterComparison: Comparison,
+        filterValue: String,
+        @ViewBuilder content: @escaping (T) -> Content
+    ) {
         _fetchRequest = FetchRequest<T>(
-            sortDescriptors: [],
+            sortDescriptors: sortDescriptors,
             predicate: NSPredicate(format: "%K \(filterComparison.rawValue) %@", filterKey, filterValue)
         )
         self.content = content

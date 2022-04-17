@@ -17,6 +17,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             FilteredList(
+                sortDescriptors: [SortDescriptor<Candy>(\.name)],
                 filterKey: "name",
                 filterComparison: .beginsWith,
                 filterValue: nameFilter
