@@ -11,7 +11,7 @@
 - [x] [Project 9. Drawing](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project9/drawing)
 - [x] [Project 10. Cupcake Corner](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project10/cupcake-corner)
 - [x] [Project 11. Bookworm](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project11/bookworm)
-- [ ] Project 12. Core Data
+- [x] [Project 12. Core Data](https://github.com/apriakhin/100-days-of-swiftui/tree/project/project12/core-data)
 - [ ] Project 13. Instafilter
 - [ ] Project 14. Bucket List
 - [ ] Project 15. Accessibility
