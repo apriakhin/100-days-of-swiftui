@@ -17,6 +17,7 @@
 		39718EFF280C73B300E43CDB /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EFB280C73B300E43CDB /* Country+CoreDataProperties.swift */; };
 		39718F00280C73B300E43CDB /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EFC280C73B300E43CDB /* Candy+CoreDataClass.swift */; };
 		39718F01280C73B300E43CDB /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EFD280C73B300E43CDB /* Candy+CoreDataProperties.swift */; };
+		39718F03280C776B00E43CDB /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718F02280C776B00E43CDB /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		39718EFB280C73B300E43CDB /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		39718EFC280C73B300E43CDB /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		39718EFD280C73B300E43CDB /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		39718F02280C776B00E43CDB /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				39718EFD280C73B300E43CDB /* Candy+CoreDataProperties.swift */,
 				39718EDD280C560200E43CDB /* CoreDataProjectApp.swift */,
 				39718EDF280C560200E43CDB /* ContentView.swift */,
+				39718F02280C776B00E43CDB /* FilteredList.swift */,
 				39718EEB280C568200E43CDB /* DataController.swift */,
 				39718EE1280C560300E43CDB /* Assets.xcassets */,
 				39718EED280C56B200E43CDB /* CoreDataProject.xcdatamodeld */,
@@ -157,6 +160,7 @@
 			files = (
 				39718EE0280C560200E43CDB /* ContentView.swift in Sources */,
 				39718EEC280C568200E43CDB /* DataController.swift in Sources */,
+				39718F03280C776B00E43CDB /* FilteredList.swift in Sources */,
 				39718EFF280C73B300E43CDB /* Country+CoreDataProperties.swift in Sources */,
 				39718F01280C73B300E43CDB /* Candy+CoreDataProperties.swift in Sources */,
 				39718EEF280C56B200E43CDB /* CoreDataProject.xcdatamodeld in Sources */,

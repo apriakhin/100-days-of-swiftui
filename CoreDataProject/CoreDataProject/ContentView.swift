@@ -12,16 +12,16 @@ struct ContentView: View {
     
     @FetchRequest(sortDescriptors: []) var countries: FetchedResults<Country>
     
+    @State private var nameFilter = "T"
+    
     var body: some View {
         VStack {
-            List {
-                ForEach(countries, id: \.self) { country in
-                    Section(country.wrappedFullName) {
-                        ForEach(country.candyArray, id: \.self) { candy in
-                            Text(candy.wrappedName)
-                        }
-                    }
-                }
+            FilteredList(
+                filterKey: "name",
+                filterComparison: "BEGINSWITH",
+                filterValue: nameFilter
+            ) { (candy: Candy) in
+                Text(candy.wrappedName)
             }
 
             Button("Add") {
@@ -50,6 +50,18 @@ struct ContentView: View {
                 candy4.origin?.fullName = "Switzerland"
 
                 try? moc.save()
+            }
+            
+            Button("Show T") {
+                nameFilter = "T"
+            }
+
+            Button("Show M") {
+                nameFilter = "M"
+            }
+            
+            Button("Show K") {
+                nameFilter = "K"
             }
         }
     }
