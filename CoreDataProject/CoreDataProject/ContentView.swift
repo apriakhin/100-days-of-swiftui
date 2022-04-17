@@ -18,7 +18,7 @@ struct ContentView: View {
         VStack {
             FilteredList(
                 filterKey: "name",
-                filterComparison: "BEGINSWITH",
+                filterComparison: .beginsWith,
                 filterValue: nameFilter
             ) { (candy: Candy) in
                 Text(candy.wrappedName)
