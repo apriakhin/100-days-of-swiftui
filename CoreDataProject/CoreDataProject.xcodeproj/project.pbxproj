@@ -13,8 +13,6 @@
 		39718EE5280C560300E43CDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39718EE4280C560300E43CDB /* Preview Assets.xcassets */; };
 		39718EEC280C568200E43CDB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EEB280C568200E43CDB /* DataController.swift */; };
 		39718EEF280C56B200E43CDB /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39718EED280C56B200E43CDB /* CoreDataProject.xcdatamodeld */; };
-		39718EF2280C5B1700E43CDB /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EF0280C5B1700E43CDB /* Movie+CoreDataClass.swift */; };
-		39718EF3280C5B1700E43CDB /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39718EF1280C5B1700E43CDB /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +23,6 @@
 		39718EE4280C560300E43CDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39718EEB280C568200E43CDB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		39718EEE280C56B200E43CDB /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
-		39718EF0280C5B1700E43CDB /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		39718EF1280C5B1700E43CDB /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +55,6 @@
 		39718EDC280C560200E43CDB /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				39718EF0280C5B1700E43CDB /* Movie+CoreDataClass.swift */,
-				39718EF1280C5B1700E43CDB /* Movie+CoreDataProperties.swift */,
 				39718EDD280C560200E43CDB /* CoreDataProjectApp.swift */,
 				39718EDF280C560200E43CDB /* ContentView.swift */,
 				39718EEB280C568200E43CDB /* DataController.swift */,
@@ -152,8 +146,6 @@
 				39718EE0280C560200E43CDB /* ContentView.swift in Sources */,
 				39718EEC280C568200E43CDB /* DataController.swift in Sources */,
 				39718EEF280C56B200E43CDB /* CoreDataProject.xcdatamodeld in Sources */,
-				39718EF2280C5B1700E43CDB /* Movie+CoreDataClass.swift in Sources */,
-				39718EF3280C5B1700E43CDB /* Movie+CoreDataProperties.swift in Sources */,
 				39718EDE280C560200E43CDB /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
