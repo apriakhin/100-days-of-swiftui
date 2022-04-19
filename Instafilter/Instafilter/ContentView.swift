@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var image: Image?
+    @State private var inputImage: UIImage?
     @State private var filterIntensity = 0.5
+    @State private var showingImagePicker = false
     
     var body: some View {
         NavigationView {
@@ -44,11 +46,15 @@ struct ContentView: View {
             }
             .padding([.horizontal, .bottom])
             .navigationTitle("Instafilter")
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(image: $inputImage)
+            }
+            .onChange(of: inputImage) { _ in loadImage() }
         }
     }
     
     func selectImage() {
-        
+        showingImagePicker = true
     }
     
     func changeFilter() {
@@ -57,6 +63,11 @@ struct ContentView: View {
     
     func save() {
         
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }
 
